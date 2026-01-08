@@ -1,0 +1,233 @@
+/* External CSS File - style.css */
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Frame Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Utama - Full Width */
+.main-header {
+    background: linear-gradient(135deg, #7dd3e8 0%, #a8e0ed 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 55px;          /* ukuran ideal header */
+    height: 55px;
+    object-fit: contain;  /* logo tidak gepeng */
+}
+
+
+.header-text {
+    width: 100%;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header-text p {
+    font-size: 16px;
+    color: #34495e;
+    font-weight: 500;
+}
+
+
+/* Body Content - Sidebar + Main */
+.body-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sidebar Kiri */
+.sidebar {
+    width: 280px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #ccc;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    padding: 25px 20px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.sidebar-header h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.sidebar-header h4 {
+    font-size: 18px;
+    color: #34495e;
+    font-weight: 600;
+}
+
+/* Sidebar Content - Menu Area */
+.sidebar-content {
+    flex: 1;
+    padding: 25px 20px;
+    overflow-y: auto;
+    background-color: white;
+}
+
+/* Menu Buttons */
+.menu-item {
+    background-color: #dc3545;
+    color: white;
+    padding: 16px 15px;
+    margin-bottom: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(220, 53, 69, 0.3);
+}
+
+.menu-item:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.4);
+}
+
+.menu-item.active {
+    background-color: #bd2130;
+}
+
+/* Content Area */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 35px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 6px rgba(76, 175, 80, 0.3);
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(76, 175, 80, 0.4);
+}
+
+/* Footer - Full Width */
+.main-footer {
+    background: linear-gradient(135deg, #7dd3e8 0%, #a8e0ed 100%);
+    padding: 18px;
+    text-align: center;
+    border-top: 3px solid #5fc4db;
+}
+
+.main-footer p {
+    color: #2c3e50;
+    font-size: 15px;
+    font-weight: 600;
+}
